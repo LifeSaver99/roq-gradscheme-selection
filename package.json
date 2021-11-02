@@ -1,0 +1,23 @@
+{
+  "name": "roq-gradscheme-selection",
+  "version": "1.0.0",
+  "description": "checking the requirements for selecting grads for tester role",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LifeSaver99/roq-gradscheme-selection.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LifeSaver99/roq-gradscheme-selection/issues"
+  },
+  "homepage": "https://github.com/LifeSaver99/roq-gradscheme-selection#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
