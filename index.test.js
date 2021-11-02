@@ -1,3 +1,4 @@
+const { expect } = require('@jest/globals')
 const index = require('./index')
 
 let ade = index.ade
@@ -6,11 +7,29 @@ let maddy = index.maddy
 
 describe("THE TEST GROUP FOR GRADUATE ADE", () => {
 
+    test("test that the name of graduate matches ade", () => {
+        expect(ade.name).toMatch("ade")
+    })
+
+    test("test that ade softskills has increased after gaining straigthTalking attributes", () => {
+        ade.softSkills = 67
+        ade.straigthTalking()
+        expect(ade.softSkills).toBeGreaterThan(67)
+        ade.softSkills = 67
+    })
+
     test("test that ade softskills has increased after gaining straigthTalking attributes", () => {
         ade.softSkills = 67
         ade.straigthTalking()
         expect(ade.softSkills).toBe(77)
         ade.softSkills = 67
+    })
+
+    test("test that ade technicalSkills has increased after gaining excellence attributes", () => {
+        ade.technicalSkills = 88
+        ade.excellence()
+        expect(ade.technicalSkills).toBeLessThan(99)
+        ade.technicalSkills = 88
     })
 
     test("test that ade technicalSkills has increased after gaining excellence attributes", () => {
@@ -39,11 +58,29 @@ describe("THE TEST GROUP FOR GRADUATE ADE", () => {
 
 describe("THE TEST GROUP FOR ACADEMY CONSULTANT JAKOB", () => {
 
+    test("test that the name of academy consultant match jakob", () => {
+        expect(jakob.name).toMatch("jakob")
+    })
+
+    test("test that jakob poolScore has increased after gaining straigthTalking attributes", () => {
+        jakob.poolScore = 76
+        jakob.straigthTalking()
+        expect(jakob.poolScore).toBeGreaterThan(76)
+        jakob.poolScore = 76
+    })
+
     test("test that jakob poolScore has increased after gaining straigthTalking attributes", () => {
         jakob.poolScore = 76
         jakob.straigthTalking()
         expect(jakob.poolScore).toBe(86)
         jakob.poolScore = 76
+    })
+
+    test("test that jakob vsCodeSkills has increased after gaining excellence attributes", () => {
+        jakob.vsCodeSkills = 58
+        jakob.excellence()
+        expect(jakob.vsCodeSkills).toBeLessThan(69)
+        jakob.vsCodeSkills = 58
     })
 
     test("test that jakob vsCodeSkills has increased after gaining excellence attributes", () => {
@@ -60,7 +97,7 @@ describe("THE TEST GROUP FOR ACADEMY CONSULTANT JAKOB", () => {
         jakob.gitHubSkills = 69
     })
 
-    test("test that ade cliSkills has increased after gaining passionate attributes", () => {
+    test("test that jakob cliSkills has increased after gaining passionate attributes", () => {
         jakob.cliSKills = 88
         jakob.passionate()
         expect(jakob.cliSKills).toBe(98)
@@ -71,12 +108,29 @@ describe("THE TEST GROUP FOR ACADEMY CONSULTANT JAKOB", () => {
 
 describe("THE TEST GROUP FOR TESTER MADDY", () => {
 
+    test("test that the name of tester matches maddy", () => {
+        expect(maddy.name).toMatch("maddy")
+    })
+
+    test("test that maddy presentation has increased after gaining straigthTalking attributes", () => {
+        maddy.presentation = 79
+        maddy.straigthTalking()
+        expect(maddy.presentation).toBeGreaterThan(79)
+        maddy.presentation = 79
+    })
 
     test("test that maddy presentation has increased after gaining straigthTalking attributes", () => {
         maddy.presentation = 79
         maddy.straigthTalking()
         expect(maddy.presentation).toBe(89)
         maddy.presentation = 79
+    })
+
+    test("test that maddy testAutomation has increased after gaining excellence attributes", () => {
+        maddy.testAutomation = 88
+        maddy.excellence()
+        expect(maddy.testAutomation).toBeLessThan(99)
+        maddy.testAutomation = 88
     })
 
     test("test that maddy testAutomation has increased after gaining excellence attributes", () => {

@@ -1,5 +1,6 @@
 class grads {
-    constructor(softSkills, degree, technicalSkills, teamWork) {
+    constructor(name, softSkills, degree, technicalSkills, teamWork) {
+        this.name = name
         this.softSkills = softSkills
         this.degree = degree
         this.technicalSkills = technicalSkills
@@ -22,10 +23,11 @@ class grads {
     }
 }
 
-const ade = new grads(67, 85, 88, 79)
+const ade = new grads("ade", 67, 85, 88, 79)
 
 class tester {
-    constructor(javascript, analyticSkills, testAutomation, presentation) {
+    constructor(name, javascript, analyticSkills, testAutomation, presentation) {
+        this.name = name
         this.javascript = javascript
         this.analyticSkills = analyticSkills
         this.testAutomation = testAutomation
@@ -49,10 +51,11 @@ class tester {
 }
 
 
-const maddy = new tester(85, 86, 88, 79)
+const maddy = new tester("maddy", 85, 86, 88, 79)
 
 class academyConsultant {
-    constructor(poolScore, vsCodeSkills, cliSKills, gitHubSkills) {
+    constructor(name, poolScore, vsCodeSkills, cliSKills, gitHubSkills) {
+        this.name = name
         this.poolScore = poolScore
         this.vsCodeSkills = vsCodeSkills
         this.cliSKills = cliSKills
@@ -76,7 +79,7 @@ class academyConsultant {
 }
 
 
-const jakob = new academyConsultant(76, 58, 88, 69)
+const jakob = new academyConsultant("jakob", 76, 58, 88, 69)
 
 module.exports = {
     grads,
